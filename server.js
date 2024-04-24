@@ -58,12 +58,37 @@ app.use(express.json());
 
 // ルートハンドラー
 app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+});
+
+app.get('/form', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'form.html'));
 });
 
-app.get('/index', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+app.get('/contact', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'contact.html'));
 });
+
+app.get('/contact/thanks', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'thanks.html'));
+});
+
+app.get('/hiking-calculator', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'hiking-calculator.html'));
+});
+
+app.get('/terms', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'terms.html'));
+});
+
+app.get('/terms/privacy', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'privacy-policy.html'));
+});
+
+app.get('/course-const', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'course-const.html'));
+});
+
 
 // publicディレクトリを静的ファイル用に設定
 app.use(express.static(path.join(__dirname, 'public')));
@@ -83,7 +108,7 @@ app.post('/submit-form', (req, res) => {
         } else {
             lastID = this.lastID;
             console.log('データ挿入：', lastID);
-            res.redirect('/index');
+            res.redirect('/hiking-calculator');
         }
     });
 });
