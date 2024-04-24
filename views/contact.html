@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css" type="text/css" media="all">
+  <title>Dropdown List using JavaScript</title>
+</head>
+<body id="body">
+  <div id="layout">
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="/" class="header_title">
+          <img src="/image/logo5.png" class="header_title">
+        </a>
+      </div>
+    </header>
+    <form action="https://api.staticforms.xyz/submit" method="post" id="submit">
+      <input type="hidden" name="accessKey" value="4ddbc01e-23cc-4904-a4dd-b0705c73184b"> <!-- Required -->
+      <input type="hidden" name="redirectTo" value="http://localhost:3000/contact/thanks">
+      <div class="Form">
+        <h1 class="contact-form-title">お問い合わせ</h1>
+        <!-- フォーム項目 -->
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+          <input id="userName" name="userName" type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+          <div id="em1" class="error-message"></div>
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+          <input id="userEmail" name="email" type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+          <div id="em2" class="error-message"></div>
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>確認用メールアドレス</p>
+          <input id="userEmailAgain" name="email" type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+          <div id="em3" class="error-message"></div>
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+          <textarea id="userMessage" name="message" class="Form-Item-Textarea"></textarea>
+          <div id="em4" class="error-message"></div>
+        </div>
+        <input type="submit" class="Form-Btn" value="送信する">
+      </div>
+    </form>
+    <script src="/javascript/validation.js"></script>
+  </body>
+</html>

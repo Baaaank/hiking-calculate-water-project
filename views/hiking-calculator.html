@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" media="all">
+    <title>Dropdown List using JavaScript</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a href="/" class="header_title">
+          <img src="/image/logo5.png" class="header_title">
+        </a>
+      </div>
+    </header>
+    <div class="top-container">
+      <div class="step_flow_wrap">
+        <div class="step_flow">
+          <ul class="cp_stepflow01">
+            <li class="completed"><span class="bubble"></span>Step 1</li>
+            <li class="active"><span class="bubble"></span>Step 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="second-container">
+        <div class="select-container">
+          <div id="prefectures" class="prefectures">
+            <div class="label">
+              <label for="prefecture">都道府県をえらぶ</label>
+            </div>
+            <div class="select" id="dropdown-prefectures">
+              <select>
+              </select>
+            </div>
+          </div>
+
+          <div id="mountains" class="mountains">
+            <div class="label">
+              <label for="mountain">山をえらぶ</label>
+            </div>
+            <div class="select" id="dropdown-mountains">
+              <select>
+              </select>
+            </div>
+          </div>
+
+          <div id="courses" class="courses">
+            <div class="label">
+              <label for="course">コースをえらぶ</label>
+            </div>
+            <div class="select" id="dropdown-courses">
+              <select>
+              </select>
+            </div>
+            <div id="courseInfoDisplay">
+            </div>
+          </div>
+        
+          <div id="hiking-days" class="hiking-days">
+            <div class="label">
+              <label for="hiking-days">山行予定をえらぶ</label>
+            </div>
+            <div>
+              <input type="radio" name="hiking-days" value="option1">
+              <label for="option1">日帰り</label>
+              <input type="radio" name="hiking-days" value="option2">
+              <label for="option2">1泊以上</label>
+            </div>
+            <div id="option-info" class="info">
+            </div>
+          </div>
+        
+          <div id="backpack-weight" class="bp-weight">
+            <div class="label">
+              <label for="bp-weight">ザックの重量をえらぶ</label>
+            </div>
+            <div class="select" id="dropdown-backpack-weight">
+              <select>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-overlay closed" id="modal-overlay"></div>
+        <div class="modal closed" id="modal">
+          <button class="close-button" id="close-button">閉じる</button>
+          <div class="modal-guts">
+            <h2 class="modal-title">登山中に必要な水の量</h2>
+            <p id="calculationResult" class="result"></p>
+            <h3 class="modal-title">【水分補給の簡単な注意点】</h3>
+            <div class="safety-notice-wrap">
+              <p class="safety-notice">
+                算出された飲料水量はコース定数の計算式から導き出しております。<br>
+                あくまで目安量になりますので、個人の体調や気象条件に応じて調整してください。<br>
+                特に夏季や高温時は、通常より多めに水分を携行することをお勧めします。
+              </p>
+              <p class="additional-info-link">コース定数や注意事項については、<a href="/course-const">こちら</a>をご確認ください。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back-btn-wrap">
+        <button type="button" class="back-btn" onclick="location.href='/form'">
+          <div class="content">
+            <span>戻る</span>
+          </div>
+        </button>
+      </div>
+    </div>
+    <script src="/javascript/script.js"></script>
+  </body>
+</html>
