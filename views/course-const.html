@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" media="all">
+    <title>Dropdown List using JavaScript</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a href="/" class="header_title">
+          <img src="/image/logo5.png" class="header_title">
+        </a>
+      </div>
+    </header>
+    <div class="terms_top_container">
+      <div class="terms_container">
+        <div class="terms_title">
+          <h1>コース定数について</h1>
+        </div>
+        <div>
+          <p>
+            コース定数とは、鹿屋体育大学の名誉教授である山本正嘉氏によって提唱された、特定のコースを歩行した際に消費されるエネルギー量を示す指標です。この指標を用いることで、特定のコースを完遂するのに必要なエネルギー量（つまり、必要な体力）を、客観的な数値として把握することが可能になります。本サービスでは、このコース定数で導いた値に対し、ユーザーの体重とザックの重量を掛け合わせることで行動中のエネルギー消費量を割り出し、山行時に必要な水分量を計算しております。
+          </p>
+          <p class="article">
+            コース定数とエネルギー消費量の算出方法は以下の通りです：
+          </p>
+          <h3 class="article">
+            コース定数 = 1.8 × 標準歩行時間(h) + 0.3 × 歩行距離(km) + 10.0 × 総上昇高度(km) + 0.6 × 総下降高度(km)
+          </h3>
+          <h3 class="article">
+            エネルギー消費量 = コース定数 × (体重(kg) + ザック重量(kg))
+          </h3>
+          <p class="article">
+            この算出式は、山歩きにおけるエネルギー消費量を見積もる上で非常に有効です。コース定数の概念や計算方法についての詳細は、<a href="https://jglobal.jst.go.jp/detail?JGLOBAL_ID=200902212957954269">「登山のエネルギー消費量推定式の作成 - 歩行時間、歩行距離、体重、ザックの重さとの関連から -」（中原玲緒奈, 萩原正大, 山本正嘉, 登山医学 第26巻 115-121頁, 2006年）</a>という文献で紹介されております。この文献では、コース定数がどのようにして山行の計画や体力管理に役立てることができるかが詳しく解説されています。
+          </p>
+        </div>
+        <div class="notice_body">
+          <h3 class="notice_title" >本サービスの利用にあたっての注意点</h3>
+          <p class="notice">
+            本サービスで提供される計算結果は、エネルギー消費量（脱水量）の8割を補給することを前提にしており、提示した値はあくまで目安としてご利用ください。実際に必要となる水の量は、個人の体調や活動状況、季節や天候などの環境要因によって異なります。特に長時間のアウトドア活動や激しい運動を行う際には、以下の点にご注意ください。
+          </p>
+          <ul class="notice_list">
+            <li>
+              体調が優れない時や疲れが溜まっている時は、通常よりも多めに水分を確保することをお勧めします。
+            </li>
+            <li>
+              夏場や湿度が高い日は、汗を多くかくため、より多くの水分が必要になります。逆に寒い時期は、体感での水分の必要性が感じにくいですが、適切な水分量を確保することが重要です。
+            </li>
+            <li>
+              難所が多いコースや慣れない山に登る際は、エネルギー消費量が多くなる傾向があるため、計算結果に基づいた量よりも多めに持参することが望ましいです。
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

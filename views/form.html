@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css" type="text/css" media="all">
+  <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
+  <title>Dropdown List using JavaScript</title>
+</head>
+<body class="form_body">
+  <div id="layout">
+    <header class="header">
+      <div class="header-inner">
+        <a href="/" class="header_title">
+          <img src="/image/logo5.png" class="header_title">
+        </a>
+      </div>
+    </header>
+    <form class="userInfo">
+      <div class="top-container">
+        <div class="step_flow_wrap">
+          <div class="step_flow">
+            <ul class="cp_stepflow01">
+              <li class="active"><span class="bubble"></span>Step 1</li>
+              <li><span class="bubble"></span>Step 2</li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="gender-age-container">
+            <div class="gender">
+              <label for="gender" class="info-lb">
+                <span>性別を選択してください</span>
+              </label>
+              <select id="gender" class="gender-age-input">
+                <option value disabled selected>性別を選択してください</option>
+                <option value="male">男性</option>
+                <option value="female">女性</option>
+              </select>
+              <p id="gender-error" class="error_text"></p>
+            </div>
+  
+            <div class="age">
+              <label for="age" class="info-lb">
+                <span>年齢</span>
+              </label>
+              <input type="text" id="age" class="gender-age-input" placeholder="年齢を記入してください">
+              <p id="age-error" class="error_text"></p>
+            </div>
+          </div>
+  
+          <div class="height-weight-container">
+            <div class="column">
+              <label for="height" class="info-lb">
+                <span>身長（cm）</span>
+              </label>
+              <input type="text" id="height" class="body-input" placeholder="50 - 260">
+              <p id="height-error" class="error_text"></p>
+            </div>
+  
+            <div class="column">
+              <label for="weight" class="info-lb">
+                <span>体重（kg）</span>
+              </label>
+              <input type="text" id="weight" class="body-input" placeholder="10 - 200">
+              <p id="weight-error" class="error_text"></p>
+            </div>
+          </div>
+          <div class="btn">
+            <input class="submit" id="btn" type="button" value="登りたい山を選ぶ">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="/javascript/form.js"></script>
+  <script src="/javascript/validation.js"></script>
+</body>
+</html>
